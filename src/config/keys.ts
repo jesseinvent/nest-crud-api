@@ -1,3 +1,7 @@
+import { config } from 'dotenv';
+
+config();
+
 export default {
-  mongoURI: 'mongodb://localhost:27017/nest_api_db',
+  mongoURI: process.env.DB_URL,
 };
